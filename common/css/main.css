@@ -1,0 +1,14 @@
+@import url(./base/button.css);
+@import url(./base/input.css);
+@import url(./layout/form.css);
+
+@font-face {
+    font-family: Notosan-Regular;
+    src: url(../../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+body{
+    font-family: Notosan-Regular;
+    font-size: 14px;
+}
+

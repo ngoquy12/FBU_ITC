@@ -1,0 +1,43 @@
+.m-button {
+    background-color: #0f71f2;
+    border: 1px solid transparent;
+    color: #fff;
+    min-width: 80px;
+    padding: 0 16px;
+    border-radius: 4px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .m-button:hover {
+    background-color: #1877f2;
+  }
+  
+  .m-button:focus {
+    background-color: #0f71f2;
+  }
+  
+  .m-button-secondary {
+    border: 1px solid #8d9096;
+    color: #111;
+    background-color: transparent;
+  }
+  
+  .m-button-secondary:hover {
+    background-color: #d2d3d6;
+  }
+  
+  .m-button-secondary:focus, .m-button-secondary:active {
+    background-color: #d2d3d6;
+  }
+  
+  .m-button-text {
+    font-weight: 600;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    transition: all .25s ease;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 13px;
+  }

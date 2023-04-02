@@ -1,0 +1,88 @@
+.m-icon-14 {
+    width: 14px;
+    height: 14px;
+    background-image: url(../../img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+}
+
+.m-icon-16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(../../img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+}
+
+.m-icon-20 {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+}
+
+.m-icon-24 {
+    width: 24px;
+    height: 24px;
+    background-image: url(../../img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+}
+
+.m-icon-48 {
+    width: 48px;
+    height: 48px;
+    background-image: url(../../img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+}
+
+/* Icon tải lại dữ liệu */
+.m-icon-refresh {
+    background-position: -423px -201px;
+}
+
+/* Icon dropdown */
+.m-icon-arrow-dropdown {
+    background-position: -560px -359px;
+}
+
+
+/* Icon active checkbox */
+.m-icon-checkbox-active {
+    background-position: -1224px -360px;
+}
+
+/* Icon trợ giúp */
+.m-icon-help {
+    background-position: -89px -144px;
+}
+
+/* Icon đóng biểu mẫu */
+.m-icon-close {
+    background-position: -144px -144px;
+}
+
+/* Icon cảnh báo nguy hiểm */
+.m-icon-danger {
+    background-position: -24px -954px;
+    width: 48px;
+    height: 48px;
+}
+
+/* Icon câu hỏi */
+.m-icon-question {
+    background-position: -826px -456px;
+    width: 48px;
+    height: 48px;
+}
+
+/* Icon cảnh báo */
+.m-icon-warning {
+    background-position: -597px -456px;
+    width: 48px;
+    height: 48px;
+}
+
+/* Icon thành công */
+.m-icon-suscess {
+    background-position: -984px -456px;
+    width: 48px;
+    height: 48px;
+}

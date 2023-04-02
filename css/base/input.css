@@ -1,0 +1,36 @@
+.m-input {
+    padding-left: 8px;
+    padding-right: 12px;
+    border-radius: 4px;
+    height: 40px;
+    border: 1px solid #babec5;
+    box-sizing: border-box;
+    outline: none;
+    width: 300px;
+  }
+
+  .m-input-search{
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .m-input:hover {
+    outline: 1px solid #e2e2e2;
+  }
+  
+  .m-input:focus {
+    border: 1px solid #0f71f2;
+  }
+  
+  /* CSS input width */
+  
+  .m-input-40 {
+    width: 40%!important;
+  }
+  
+  .m-input-60 {
+    width: 60%!important;
+  }
+  
+  .m-input-100 {
+    width: 100%!important;
+  }

@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+        <title>Trang quản trị</title>
+        <link rel="stylesheet" href="./fontawesome-free-6.3.0-web (1)/fontawesome-free-6.3.0-web/css/all.min.css">
+        <link href="./css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="./scss/main.css">
+        <link rel="stylesheet" href="./js/admin.js">
+    </head>
+
+    <body id="page-top">
+        <!-- Page Wrapper -->
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <ul class="navbar-nav bg-opacity sidebar sidebar-dark
+                accordion" id="accordionSidebar">
+
+                <!-- Sidebar - Brand -->
+                <a class="sidebar-brand d-flex align-items-center
+                    justify-content-center" href="index.html">
+                    <div class="sidebar-brand-text ">
+                        <img width="223" height="70"
+                            src="https://qnict.vn/wp-content/uploads/2021/08/logo2-scaled.jpg"
+                            alt="">
+                    </div>
+                </a>
+                <!-- Divider -->
+                <hr class="sidebar-divider my-0">
+                <!-- Nav Item - Pages Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Quản lý bài viết</span>
+                    </a>
+                    <hr class="sidebar-divider my-0">
+                    <a class="nav-link collapsed" href="./manager-comment.html">
+                        <i class="fa-solid fa-comment"></i>
+                        <span>Quản lý bình luận</span>
+                    </a>
+                    <hr class="sidebar-divider my-0">
+                    <a class="nav-link collapsed" href="#">
+                        <i class="fa-solid fa-file"></i>
+                        <span>Quản lý tài liệu</span>
+                    </a>
+                    <hr class="sidebar-divider my-0">
+                    <a class="nav-link collapsed active" href="./manager-user.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Quản lý tài khoản</span>
+                    </a>
+                    <hr class="sidebar-divider my-0">
+                    <a class="nav-link collapsed" href="./manager-group-itc.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Quản lý nhóm học thuật</span>
+                    </a>
+                    <hr class="sidebar-divider my-0">
+                    <a class="nav-link collapsed" href="#">
+                        <i class="fa-solid fa-desktop"></i>
+                        <span>Quản lý giao diện</span>
+                    </a>
+                    <hr class="sidebar-divider my-0">
+                    <a class="nav-link collapsed" href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Cài đặt</span>
+                    </a>
+                </li>
+
+                <!-- Divider -->
+                <hr class="sidebar-divider">
+                <!-- Nav Item - Pages Collapse Menu -->
+                <li class="nav-item ">
+                    <a class="nav-link collapsed" href="#"
+                        data-toggle="collapse" data-target="#collapsePages"
+                        aria-expanded="true" aria-controls="collapsePages">
+                        <i class="fas fa-fw fa-pager"></i>
+                        <span>Trang khác</span>
+                    </a>
+                    <div id="collapsePages" class="collapse"
+                        aria-labelledby="headingPages"
+                        data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <a class="collapse-item" href="#">Trang công nghệ</a>
+                            <a class="collapse-item" href="#">Trang viết tài
+                                liệu</a>
+                            <a class="collapse-item" href="#">Trang chủ FBU</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- End of Sidebar -->
+
+            <!-- Content Wrapper -->
+            <div id="content-wrapper" class="d-flex flex-column">
+                <!-- Main Content -->
+                <div id="content">
+                    <!-- Topbar -->
+                    <nav class="navbar navbar-expand navbar-light bg-white topbar static-top ">
+                        <input class="input" type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                        <button class="m-button button-search">Tìm kiếm</button>
+                        <!-- Topbar Navbar -->
+                        <ul class="navbar-nav ml-auto">
+                            <!-- Nav Item - Alerts -->
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    id="alertsDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fas fa-bell fa-fw"></i>
+                                    <!-- Counter - Alerts -->
+                                    <span class="badge badge-danger
+                                        badge-counter">3+</span>
+                                </a>
+                                <!-- Dropdown - Alerts -->
+                                <div class="dropdown-list dropdown-menu
+                                    dropdown-menu-right shadow
+                                    animated--grow-in"
+                                    aria-labelledby="alertsDropdown">
+                                    <h6 class="dropdown-header">Thông báo</h6>
+                                    <a class="dropdown-item d-flex
+                                        align-items-center" href="#">
+                                        <div>
+                                            <div class="small text-gray-500">Ngày
+                                                20/11/2022</div>
+                                            Nguyễn Ngọc Huy đã gửi một yêu cầu
+                                            tham gia Câu lạc bộ Tin học.
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex
+                                        align-items-center" href="#">
+                                        <div>
+                                            <div class="small text-gray-500">Ngày
+                                                20/11/2022</div>
+                                            Nguyễn Ngọc Huy đã gửi một yêu cầu
+                                            tham gia Câu lạc bộ Tin học.
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item text-center
+                                        text-primary" href="#">Xem tất cả thông
+                                        báo.</a>
+                                </div>
+                            </li>
+
+                            <!-- Nav Item - Messages -->
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    id="messagesDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fa-brands fa-facebook-messenger"></i>
+                                    <!-- Counter - Messages -->
+                                    <span class="badge badge-danger
+                                        badge-counter">7+</span>
+                                </a>
+                                <!-- Dropdown - Messages -->
+                                <div class="dropdown-list dropdown-menu
+                                    dropdown-menu-right shadow
+                                    animated--grow-in"
+                                    aria-labelledby="messagesDropdown">
+                                    <h6 class="dropdown-header">Tin nhắn</h6>
+                                    <a class="dropdown-item d-flex
+                                        align-items-center" href="#">
+                                        <div class="dropdown-list-image mr-3">
+                                            <img class="rounded-circle"
+                                                src="https://tse3.mm.bing.net/th?id=OIF.vkgLofixyqMmQtCThkpeUw&pid=Api&P=0"
+                                                alt="...">
+                                            <div class="status-indicator
+                                                bg-success"></div>
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            <div class="text-truncate">Chào bạn
+                                                tôi muốn tham gia CLB tin học</div>
+                                            <div class="small text-gray-500">Nguyễn
+                                                Văn Tâm · 58 phút trước</div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex
+                                        align-items-center" href="#">
+                                        <div class="dropdown-list-image mr-3">
+                                            <img class="rounded-circle"
+                                                src="https://cdn.alongwalker.co/vn/wp-content/uploads/2022/03/29234917/image-15-kieu-toc-nam-dai-dep-va-lang-tu-nhu-ngoi-sao-dien-anh-164854735733668.jpg"
+                                                alt="...">
+                                            <div class="status-indicator"></div>
+                                        </div>
+                                        <div>
+                                            <div class="text-truncate">CLB còn
+                                                tuyển thành viên không?</div>
+                                            <div class="small text-gray-500">Nguyễn
+                                                Văn Việt · 1 ngày trước</div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item text-center
+                                        text-primary" href="#">Xem tất cả tin
+                                        nhắn</a>
+                                </div>
+                            </li>
+
+                            <div class="topbar-divider d-none d-sm-block"></div>
+                            <!-- Nav Item - User Information -->
+                            <li class="nav-item dropdown no-arrow d-flex
+                                align-items-center">
+                                <span class="d-none d-lg-inline
+                                    text-gray-600 small">Ngọ Văn Quý</span>
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    id="userDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <img class="img-profile rounded-circle mr-2"
+                                        src="https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-6/306963965_863137621726259_4082424158325311757_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=AgF2XbgsP_8AX8Du1AP&_nc_ht=scontent.fhan3-3.fna&oh=00_AfCoj1OSm8iZjOFglgU714h89Klji7xdKAcxL1YLkPOPiw&oe=641FE5C0">
+                                    <i class="fa fa-sort-desc"
+                                        title="Lựa chọn"
+                                        aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right
+                                    shadow animated--grow-in"
+                                    aria-labelledby="userDropdown">
+                                    <a class="dropdown-item"
+                                        href="./profile.html">
+                                        <i class="fas fa-user fa-sm fa-fw mr-2
+                                            text-gray-400"></i>
+                                        Thông tin cá nhân
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-list fa-sm fa-fw mr-2
+                                            text-gray-400"></i>
+                                        Nhật kí hoạt động
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"
+                                        data-toggle="modal"
+                                        data-target="#logoutModal">
+                                        <i class="fas fa-sign-out-alt fa-sm
+                                            fa-fw mr-2 text-gray-400"></i>
+                                        Đăng xuất
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                        <!-- End of Topbar -->
+
+                        <!-- Begin Page Content -->
+                        <div class="container-fluid">
+                            <div class="navigate">
+                                <div class="navigate-left">
+                                    <h4 class="toolbar-left">Tài khoản</h4>
+                                </div>
+                                <div class="navigate-right">
+                                    <button class="m-button btn-add">Thêm mới tài khoản</button>
+                                </div>
+                            </div>
+                            <div class="main">
+                                <div class="toolbar">
+                                    <div class="toolbar-right">
+                                        <input class="m-input" type="text" placeholder="Tìm kiếm theo mã và tên">
+                                        <div class="input-icon">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-body">
+                                    <table class="table table-hover table-bordered">
+                                        <thead class="table-thead">
+                                            <tr>
+                                                <th scope="col">
+                                                    <input type="checkbox" value="">
+                                                </th>
+                                                <th scope="col">Mã người dùng</th>
+                                                <th scope="col">Tên người dùng</th>
+                                                <th scope="col">Ngày sinh</th>
+                                                <th scope="col">Giới tính</th>
+                                                <th scope="col">Địa chỉ</th>
+                                                <th scope="col">Khoa</th>
+                                                <th scope="col">Lớp</th>
+                                                <th scope="col">Trạng thái</th>
+                                                <th scope="col" colspan="2">Lựa chọn</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Nhập dữ liệu -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <input type="checkbox">
+                                                </th>
+                                                <td>NV0001</td>
+                                                <td>Ngọ Văn Quý</td>
+                                                <td>28/06/2001</td>
+                                                <td>Nam</td>
+                                                <td>Thanh Hóa</td>
+                                                <td>CNTT</td>
+                                                <td>D08.48.01</td>
+                                                <td><i class="fa-solid fa-circle text-success mr-2"></i> Đang hoạt động</td>
+                                                <td>
+                                                    <i title="Sửa" class=" icon-edit fa-solid fa-pen-fancy text-warning cursor-pointer"
+                                                    ></i>
+                                                </td>
+                                                <td>
+                                                    <i title="Xóa" class="fa-solid fa-trash text-danger cursor-pointer"
+                                                    data-toggle="modal" data-target="#exampleModal"
+                                                    ></i>
+                                                </td>
+                                            </tr>
+                                            <!-- Nhập dữ liệu -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <input type="checkbox">
+                                                </th>
+                                                <td>NV0001</td>
+                                                <td>Ngọ Văn Quý</td>
+                                                <td>28/06/2001</td>
+                                                <td>Nam</td>
+                                                <td>Thanh Hóa</td>
+                                                <td>CNTT</td>
+                                                <td>D08.48.01</td>
+                                                <td><i class="fa-solid fa-circle text-success mr-2"></i> Đang hoạt động</td>
+                                                <td>
+                                                    <i title="Sửa" class="fa-solid fa-pen-fancy text-warning cursor-pointer"
+                                                    ></i>
+                                                </td>
+                                                <td>
+                                                    <i title="Xóa" class="fa-solid fa-trash text-danger cursor-pointer"
+                                                    data-toggle="modal" data-target="#exampleModal"
+                                                    ></i>
+                                                </td>
+                                            </tr>
+                                            <!-- Nhập dữ liệu -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <input type="checkbox">
+                                                </th>
+                                                <td>NV0001</td>
+                                                <td>Ngọ Văn Quý</td>
+                                                <td>28/06/2001</td>
+                                                <td>Nam</td>
+                                                <td>Thanh Hóa</td>
+                                                <td>CNTT</td>
+                                                <td>D08.48.01</td>
+                                                <td><i class="fa-solid fa-circle text-success mr-2"></i> Đang hoạt động</td>
+                                                <td>
+                                                    <i title="Sửa" class="fa-solid fa-pen-fancy text-warning cursor-pointer"
+                                                    ></i>
+                                                </td>
+                                                <td>
+                                                    <i title="Xóa" class="fa-solid fa-trash text-danger cursor-pointer"
+                                                    data-toggle="modal" data-target="#exampleModal"
+                                                    ></i>
+                                                </td>
+                                            </tr>
+                                            <!-- Nhập dữ liệu -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <input type="checkbox">
+                                                </th>
+                                                <td>NV0001</td>
+                                                <td>Ngọ Văn Quý</td>
+                                                <td>28/06/2001</td>
+                                                <td>Nam</td>
+                                                <td>Thanh Hóa</td>
+                                                <td>CNTT</td>
+                                                <td>D08.48.01</td>
+                                                <td><i class="fa-solid fa-circle text-success mr-2"></i> Đang hoạt động</td>
+                                                <td>
+                                                    <i title="Sửa" class="fa-solid fa-pen-fancy text-warning cursor-pointer"
+                                                    ></i>
+                                                </td>
+                                                <td>
+                                                    <i title="Xóa" class="fa-solid fa-trash text-danger cursor-pointer"
+                                                    data-toggle="modal" data-target="#exampleModal"
+                                                    ></i>
+                                                </td>
+                                            </tr>
+                                            <!-- Nhập dữ liệu -->
+                                            <tr>
+                                                <th scope="row">
+                                                    <input type="checkbox">
+                                                </th>
+                                                <td>NV0001</td>
+                                                <td>Ngọ Văn Quý</td>
+                                                <td>28/06/2001</td>
+                                                <td>Nam</td>
+                                                <td>Thanh Hóa</td>
+                                                <td>CNTT</td>
+                                                <td>D08.48.01</td>
+                                                <td><i class="fa-solid fa-circle text-success mr-2"></i> Đang hoạt động</td>
+                                                <td>
+                                                    <i title="Sửa" class="icon-edit fa-solid fa-pen-fancy text-warning cursor-pointer"
+                                                    ></i>
+                                                </td>
+                                                <td>
+                                                    <i title="Xóa" class="fa-solid fa-trash text-danger cursor-pointer"
+                                                    data-toggle="modal" data-target="#exampleModal"
+                                                    ></i>
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Main Content -->
+                </div>
+                <!-- End of Content Wrapper -->
+            </div>
+            <!-- End of Page Wrapper -->
+
+            <!-- Scroll to Top Button-->
+            <a class="scroll-to-top rounded" href="#page-top">
+                <i class="fas fa-angle-up"></i>
+            </a>
+
+            <!-- Logout Modal-->
+            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Bạn
+                                chắc chắn muốn đăng xuất?</h5>
+                            <button class="close" type="button"
+                                data-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </i></span>
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button"
+                            data-dismiss="modal">Hủy</button>
+                        <a class="btn btn-danger" href="login.html">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- Confirm delete Modal-->
+                <div class="modal fade" tabindex="-1" role="dialog" id="exampleModal">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Xóa người dùng</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Bạn chắc chắn muốn xóa người dùng này không?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                          <button type="button" class="btn btn-danger">Xóa</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+        <!-- Form thêm mới thành viên -->
+        <div class="m-popup">
+            <div class="m-popup-con">
+                <div class="m-popup-background"></div>
+                <div class="m-popup-drag">
+                    <div class="m-popup m-popup-content">
+                        <div class="m-popup-header">
+                            <div class="m-popup-title">
+                                <div class="m-title">Thêm mới người dùng</div>
+                                <label class="m-popup-checkbox">
+                                    <input type="checkbox"
+                                        class="m-input-checkbox" />
+                                    <span class="m-checkbox">
+                                        <span class="m-checkbox-inner">
+                                            <div class="m-icon-16
+                                                m-icon-checkbox-active"></div>
+                                        </span>
+                                    </span>
+                                    <span class="m-input-checkbox-label">Là quản
+                                        trị viên</span>
+                                </label>
+                                <label class="m-popup-checkbox">
+                                    <input type="checkbox"
+                                        class="m-input-checkbox" />
+                                    <span class="m-checkbox">
+                                        <span class="m-checkbox-inner">
+                                            <div class="m-icon-16
+                                                m-icon-checkbox-active"></div>
+                                        </span>
+                                    </span>
+                                    <span class="m-input-checkbox-label">Là
+                                        người dùng</span>
+                                </label>
+                            </div>
+                            <div class="m-popup-close">
+                                <div
+                                    class="m-icon-24 m-icon-help"
+                                    style="margin-right: 6px"></div>
+                                <div
+                                    class="m-icon-24 m-icon-close"></div>
+                            </div>
+                        </div>
+                        <div class="m-popup--content">
+                            <div>
+                                <div class="m-content-2-col">
+                                    <div class="m-col-1 m-flex-wrap">
+                                        <div class="m-input-40 m-pr-6 m-pb-24">
+                                            <div class="m-flex">
+                                                <div>
+                                                    <div class="m-input-title">Mã</div>
+                                                </div>
+                                                <div
+                                                    class="m-input-title-require">&nbsp;*</div>
+                                            </div>
+                                            <input
+                                                type="text"
+                                                class="m-input"
+                                                />
+                                            <div class="m-input-message-error"></div>
+                                        </div>
+                                        <div class="m-input-60 m-pb-24">
+                                            <div class="m-flex">
+                                                <div>
+                                                    <div class="m-input-title">Tên
+                                                        người dùng</div>
+                                                </div>
+                                                <div
+                                                    class="m-input-title-require">&nbsp;*</div>
+                                            </div>
+                                            <input
+                                                type="text"
+                                                class="m-input"
+                                                tabindex="2"
+                                                />
+                                            <div class="m-input-message-error"></div>
+                                        </div>
+                                        <div class="m-input-100 m-pb-24">
+                                            <div class="m-flex">
+                                                <div>
+                                                    <div class="m-input-title">Khoa</div>
+                                                </div>
+                                                <div
+                                                    class="m-input-title-require">&nbsp;*</div>
+                                            </div>
+                                            <select name="" id=""
+                                                class="m-input">
+                                                <option value="">CNTT</option>
+                                                <option value="">TCNH</option>
+                                                <option value="">QTKD</option>
+                                            </select>
+                                            <div class="m-input-message-error"></div>
+                                        </div>
+                                        <div class="m-input-100 m-pb-24">
+                                            <div class="m-flex-wrap">
+                                                <div>
+                                                    <div class="m-input-title">Vị
+                                                        trí</div>
+                                                </div>
+                                            </div>
+                                            <input
+                                                type="text"
+                                                class="m-input"
+                                                tabindex="10"
+                                                />
+                                        </div>
+                                    </div>
+                                    <div class="m-col-2 m-flex-wrap">
+                                        <div class="m-input-40 m-pr-6 m-pb-24">
+                                            <div class="m-flex-wrap">
+                                                <div>
+                                                    <div class="m-input-title">Ngày
+                                                        sinh</div>
+                                                </div>
+                                            </div>
+                                            <input
+                                                type="date"
+                                                class="m-input"
+                                                tabindex="3"
+                                                />
+                                        </div>
+                                        <div class="m-input-60 m-pb-24">
+                                            <div class="m-flex-wrap">
+                                                <div>
+                                                    <div class="m-input-title">Giới
+                                                        tính</div>
+                                                </div>
+                                            </div>
+                                            <div class="m-radio-group">
+                                                <label class="m-con-radio">
+                                                    <input
+                                                        type="radio"
+                                                        class="m-input-radio"
+                                                        value="1"
+                                                        tabindex="4"
+                                                        name="gender"
+                                                        />
+                                                    <span class="m-radio">
+                                                        <span
+                                                            class="m-radio-border"></span>
+                                                        <span
+                                                            class="m-radio-circle"></span>
+                                                    </span>
+                                                    <span class="m-radio-label">Nam</span>
+                                                </label>
+                                                <label class="m-con-radio">
+                                                    <input
+                                                        type="radio"
+                                                        class="m-input-radio"
+                                                        value="0"
+                                                        tabindex="5"
+                                                        name="gender"
+                                                        />
+                                                    <span class="m-radio">
+                                                        <span
+                                                            class="m-radio-border"></span>
+                                                        <span
+                                                            class="m-radio-circle"></span>
+                                                    </span>
+                                                    <span class="m-radio-label">Nữ</span>
+                                                </label>
+                                                <label class="m-con-radio">
+                                                    <input
+                                                        type="radio"
+                                                        class="m-input-radio"
+                                                        value="2"
+                                                        tabindex="6"
+                                                        name="gender"
+                                                        />
+                                                    <span class="m-radio">
+                                                        <span
+                                                            class="m-radio-border"></span>
+                                                        <span
+                                                            class="m-radio-circle"></span>
+                                                    </span>
+                                                    <span class="m-radio-label">Khác</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="m-input-60 m-pr-6 m-pb-24">
+                                            <div class="m-flex-wrap">
+                                                <div>
+                                                    <div class="m-input-title">Lớp</div>
+                                                </div>
+                                            </div>
+                                            <input
+                                                type="text"
+                                                class="m-input"
+                                                tabindex="8"
+                                                />
+                                        </div>
+                                        <div class="m-input-40 m-pb-24">
+                                            <div class="m-flex-wrap">
+                                                <div>
+                                                    <div class="m-input-title">Ngày tham gia</div>
+                                                </div>
+                                            </div>
+                                            <input
+                                                type="date"
+                                                class="m-input"
+                                                tabindex="9"
+                                                />
+                                        </div>
+                                        <div class="m-input-100 m-pb-24">
+                                            <div class="m-flex-wrap">
+                                                <div>
+                                                    <div class="m-input-title">Email</div>
+                                                </div>
+                                            </div>
+                                            <input
+                                                type="text"
+                                                class="m-input"
+                                                tabindex="11"
+                                                />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-content-1-col m-pb-24">
+                                    <div class="m-input-100">
+                                        <div class="m-flex-wrap">
+                                            <div class="m-flex-wrap">
+                                                <div>
+                                                    <div class="m-input-title">Địa chỉ</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            class="m-input"
+                                            tabindex="12"
+                                            />
+                                    </div>
+                                </div>
+                                <div class="m-content-4-col">
+                                    <div class="m-col-1 m-pr-6">
+                                        <div class="m-input-100 m-pb-24">
+                                            <div class="m-flex-wrap">
+                                                <div>
+                                                    <div class="m-input-title">Số điện thoại</div>
+                                                </div>
+                                            </div>
+                                            <input
+                                                type="text"
+                                                class="m-input"
+                                                tabindex="13"
+                                                />
+                                        </div>
+                                        <div class="m-input-100 m-pb-24">
+                                            <div class="m-flex-wrap">
+                                                <div title="Nhóm học thuật">
+                                                    <div class="m-input-title">Điện thoại cố định</div>
+                                                </div>
+                                            </div>
+                                            <input
+                                                type="text"
+                                                class="m-input"
+                                                tabindex="16"
+                                                />
+                                        </div>
+                                    </div>
+                                    <div class="m-col-2 m-pr-6">
+                                        <div class="m-input-100 m-pb-24">
+                                            <div class="m-flex-wrap">
+                                                <div>
+                                                    <div class="m-input-title">Tên nhóm</div>
+                                                </div>
+                                            </div>
+                                            <input
+                                                type="text"
+                                                class="m-input"
+                                                tabindex="14"
+                                                />
+                                        </div>
+                                        <div class="m-input-100 m-pb-24">
+                                            <div class="m-flex-wrap">
+                                                <div>
+                                                    <div class="m-input-title">Số căn cước công dân</div>
+                                                </div>
+                                            </div>
+                                            <input
+                                                type="text"
+                                                class="m-input"
+                                                tabindex="17"
+                                                />
+                                        </div>
+                                    </div>
+                                    <div class="m-col-3 m-pr-6">
+                                        <div class="m-input-100 m-pb-24">
+                                            <div class="m-flex-wrap">
+                                                <div>
+                                                    <div class="m-input-title">Sở thích</div>
+                                                </div>
+                                            </div>
+                                            <input
+                                                type="text"
+                                                class="m-input"
+                                                tabindex="15"
+                                                />
+                                            <div class="m-input-message-error"></div>
+                                        </div>
+                                        <div class="m-input-100 m-pb-24">
+                                            <div class="m-flex-wrap">
+                                                <div>
+                                                    <div class="m-input-title">Năng khiếu</div>
+                                                </div>
+                                            </div>
+                                            <input
+                                                type="text"
+                                                class="m-input"
+                                                tabindex="18"
+                                                />
+                                        </div>
+                                    </div>
+                                    <div class="m-col-4"></div>
+                                </div>
+                            </div>
+                            <div class="m-popup--footer">
+                                <div class="m-divine"></div>
+                                <div class="m-popup-btn">
+                                    <div class="m-popup-btn-left">
+                                        <button class="m-button
+                                            m-button-secondary">Hủy</button>
+                                    </div>
+                                    <div class="m-popup-btn-right">
+                                        <button class="m-button"
+                                            style="margin-right: 5px;">Thêm</button>
+                                        <button class="m-button">Cất và thêm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Thư viện Javascrip -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script>
+            let btnAddUser = document.querySelector('.btn-add');
+            let formAddUser = document.querySelector('.m-popup');
+            let closeForm = document.querySelector('.m-popup-close');
+            let iconEdit = document.querySelector('.icon-edit');
+
+            // Sự kiện mở form thêm mới người dùng
+            btnAddUser.addEventListener('click', ()=>{
+                formAddUser.style.display = 'block';
+            });
+
+            //Sự kiện đóng form thêm mới người dùng
+            closeForm.addEventListener('click', ()=>{
+                formAddUser.style.display = 'none';
+            });
+
+            // Mở form khi click vào nut sửa 
+            iconEdit.addEventListener('click', ()=>{
+                formAddUser.style.display = 'block';
+            })
+
+        </script>
+    </body>
+
+</html>
